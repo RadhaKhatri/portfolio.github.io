@@ -7,7 +7,7 @@ Welcome to my personal portfolio website! This website showcases my skills, educ
 ## 🌐 Live Demo
 
 You can view my portfolio online:  
-[https://yourusername.github.io/](https://yourusername.github.io/)
+https://radhakhatri.github.io/portfolio.github.io/
 
 ---
 
@@ -30,10 +30,15 @@ You can view my portfolio online:
 portfolio.github.io/
 │
 ├─ index.html # Main HTML file
+
 ├─ styles.css # Custom CSS for layout, theme, and animations
+
 ├─ script.js # JS for theme toggle, modals, and typed text
+
 ├─ images/ # Images and icons used in portfolio
+
 ├─ RADHA_CSE.pdf # Resume PDF
+
 └─ README.md # This file
 
 
@@ -54,7 +59,7 @@ portfolio.github.io/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YourUsername/portfolio.github.io.git
+git clone https://github.com/RadhaKhatri/portfolio.github.io
 
 cd portfolio.github.io
 
