@@ -28,7 +28,9 @@ https://radhakhatri.github.io/portfolio.github.io/
 ## 📂 Folder Structure
 
 portfolio.github.io/
+
 │
+
 ├─ index.html # Main HTML file
 
 ├─ styles.css # Custom CSS for layout, theme, and animations
