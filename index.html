@@ -5,139 +5,163 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Radha Khatri | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
-
-    body {
-      background-color: #f5f5f5;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(to right, #6a11cb, #2575fc);
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-    }
-
-    nav {
-      background-color: #333;
-      color: white;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      padding: 1rem 0;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #00ffff;
-    }
-
-    section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #3742fa;
-      margin-bottom: 1rem;
-    }
-
-    .about p, .education p, .skills p, .achievements ul, .swot ul, .contact p {
-      margin-bottom: 1rem;
-    }
-
-    ul {
-      list-style: disc inside;
-    }
-
-    .resume-download {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 10px 20px;
-      background-color: #3742fa;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-
-    footer {
-      background-color: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    .contact a img {
-      width: 30px;
-      margin: 0 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Welcome Modal -->
+  <div id="welcome-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button id="close-welcome" class="modal-close" aria-label="Close welcome popup">&times;</button>
+      <h1>Hello, <span class="accent">Radha Bhavarlal Khatri</span> 👋</h1>
+      <p class="modal-sub">Welcome to my portfolio</p>
+      <a id="enter-site" class="btn" href="#about">Enter Portfolio</a>
+    </div>
+  </div>
+
   <header>
-    <h1>Radha Bhavarlal Khatri</h1>
-    <p>Computer Science Engineer | Web Developer | Tech Enthusiast</p>
-    <p>Cloud Engineer | YouTuber | Co-Lead of Cloud and Open Source in GDGC | Coder</p>
+    <div class="header-inner">
+      <div class="title">
+        <h1>Radha Bhavarlal Khatri</h1>
+        <p class="subtitle">Computer Science Engineer | Cloud Engineer | Web Developer | Tech Enthusiast | YouTuber | Co-Lead of Cloud and Open Source in GDGC | Coder</p>
+        
+      </div>
+
+      <div class="header-controls">
+        <button id="theme-toggle" aria-pressed="false" title="Toggle theme">🌙</button>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#swot">SWOT</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#swot">SWOT</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>Hello! I am Radha Bhavarlal Khatri from Kirloskarwadi, Sangli. I am pursuing a B.Tech in Computer Science Engineering at ADCET, Ashta, with a CGPA of 9.1. I completed SSC with 97% and HSC with 85% marks.</p>
+  <main>
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>Hello! I am Radha Bhavarlal Khatri from Kirloskarwadi, Sangli. I am pursuing a B.Tech in Computer Science Engineering at ADCET, Ashta, with a CGPA of 9.1. I completed SSC with 97% and HSC with 85% marks.</p>
     <p>Computer Science Engineering student with a solid foundation in web development, cloud computing, and programming. Maintains a strong academic record and has hands-on experience through projects and internships. Actively involved in developer communities and always willing to learn new technologies, solve real-world problems, and contribute to team success. Focused on building practical, innovative tech solutions while continuously improving skills.I am passionate about teaching, graphic design, and Cloud Computing. I also run a YouTube channel to simplify complex academic concepts for juniors and peers. My strengths include being hardworking and challenge-ready.I aim to become a skilled engineer and a contributing citizen. </p>
-    <a class="resume-download" href="RADHA_CSE.pdf" download>Download Resume (PDF)</a>
-  </section>
 
-  <section id="education" class="education">
-    <h2>Education</h2>
-    <p><strong>SSC:</strong> 97% (Swami Ramanand Vidyalaya, Ramanandnagar)</p>
-    <p><strong>HSC:</strong> 85% (New English School, Vita)</p>
-    <p><strong>Engineering:</strong> 9.1 CGPA (ADCET, Ashta)</p>
-    <ul>
-      <li>Pursuing B.Tech (Honors) with a Multidisciplinary Minor.</li>
-      <li>Pursuing a Minor in Electrical Engineering with specialization in Electric Vehicle Technology.</li>
-    </ul>
-  </section>
+        <p class="lead">I build cloud and web solutions, teach concepts on my YouTube channel, and enjoy solving real-world problems.</p>
 
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
+        <!-- Animated descriptor -->
+        <div class="descriptor" aria-live="polite">
+          <span class="descriptor-static">I am a</span>
+          <span id="typed-text" class="typed"></span>
+          <span class="cursor">|</span>
+        </div>
+
+        <a class="resume-download" href="KhatriResume.pdf" download>Download Resume (PDF)</a>
+      </div>
+    </section>
+
+    <section id="education" class="section education">
+      <div class="container">
+        <h2>Education</h2>
+        <p><strong>SSC:</strong> 97% (Swami Ramanand Vidyalaya, Ramanandnagar)</p>
+        <p><strong>HSC:</strong> 85% (New English School, Vita)</p>
+        <p><strong>Engineering:</strong> 9.1 CGPA (ADCET, Ashta)</p>
+        <ul>
+          <li>Pursuing B.Tech (Honors) with a Multidisciplinary Minor.</li>
+          <li>Minor in Electrical Engineering — specialization in Electric Vehicle Technology.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2>Skills</h2>
     <p><strong>Languages:</strong> C, C++, Python</p>
     <p><strong>Web Development:</strong> HTML, CSS, JavaScript</p>
     <p><strong>Database:</strong> MySQL</p>
     <p><strong>Cloud Computing:</strong> AWS </p>
     <p><strong>Tools:</strong> VS Code, Jupyter Notebook, Google Colab, Git</p>
     <p><strong>Machine Learning:</strong> Scikit-learn, Pandas, NumPy, Matplotlib.</p>
-  </section>
 
-  <section id="achievements" class="achievements">
-    <h2>Certifications</h2>
+      </div>
+    </section>
+<section id="projects" class="section projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <!-- Card 1 -->
+      <div class="project-card" onclick="openProject('project1')">
+        <h3>Siddhant Medical Shop Billing System</h3>
+        <p class="tech">Python, PyQt6, MySQL</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="project-card" onclick="openProject('project2')">
+        <h3>Smart Question Paper Generator</h3>
+        <p class="tech">Python, PyQt6, MySQL, Excel VBA</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="project-card" onclick="openProject('project3')">
+        <h3>FBI Time Series Forecasting</h3>
+        <p class="tech">Python, Pandas, NumPy, Matplotlib</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="project-card" onclick="openProject('project4')">
+        <h3>Electric Motor Life Monitoring</h3>
+        <p class="tech">Python, ML, IOT sensors</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Project Modals -->
+<div id="project1" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeProject('project1')">&times;</button>
+    <h2>Siddhant Medical Shop Billing System (sponsored)</h2>
+    <p>Developed a sponsored desktop application for medical shop billing, automating inventory management, vendor tracking and invoice generation. Integrated email automation to fetch vendor invoices.</p>
+    <p><strong>Technologies:</strong> Python, PyQt6, MySQL</p>
+  </div>
+</div>
+
+<div id="project2" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeProject('project2')">&times;</button>
+    <h2>Smart Question Paper Generator</h2>
+    <p>The application generates the question paper by selecting questions from the uploaded Excel question bank, organizing them based on units and criteria, and compiling them into a structured document with embedded image for final output.</p>
+    <p><strong>Technologies:</strong> Python, PyQt6, MySQL, Excel VBA</p>
+  </div>
+</div>
+
+<div id="project3" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeProject('project3')">&times;</button>
+    <h2>FBI Time Series Forecasting</h2>
+    <p>Developed a machine learning model to forecast FBI crime statistics using time series analysis techniques. Utilized tools like Python, Pandas, NumPy, and Matplotlib for data preprocessing, analysis, and visualization.</p>
+    <p><strong>Technologies:</strong> Python, Pandas, NumPy, Matplotlib</p>
+  </div>
+</div>
+
+<div id="project4" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeProject('project4')">&times;</button>
+    <h2>Electric Motor Life Monitoring (Predictive Motor Maintenance)</h2>
+    <p>Implementing predictive maintenance using data science and machine learning to monitor electric motor health. Analyzing sensor and operational data to detect early signs of motor failure. Building and training models for fault prediction, anomaly detection, and life expectancy estimation.</p>
+    <p><strong>Technologies:</strong> Python, ML, IOT sensors</p>
+  </div>
+</div>
+
+
+
+    <section id="achievements" class="section achievements">
+      <div class="container">
+        <h2>Certifications</h2>
     <ul>
       <li>AWS Academy Graduate- Cloud Foundation</li>
       <li>AWS Academy Cloud Architecting</li>
@@ -158,49 +182,73 @@
       <li>Tecspeak IT Solutions</li>
       <li>AI/ML Intern Labmentix Edtech Pvt. Ltd.</li>
     </ul>
-  </section>
 
-  <section id="swot" class="swot">
-    <h2>SWOT Analysis</h2>
-    <h3>Strengths</h3>
-    <ul>
-      <li>Hardworking</li>
+      </div>
+    </section>
+
+    <section id="swot" class="section swot">
+      <div class="container">
+        <h2>SWOT</h2>
+        <div class="grid">
+          <div>
+            <h3>Strengths</h3>
+            <ul>
+              <li>Hardworking</li>
       <li>Decision-making</li>
       <li>Problem-solving</li>
       <li>Challenge-accepting</li>
-    </ul>
-    <h3>Weaknesses</h3>
-    <ul>
-      <li>Difficulty saying "no"</li>
-      <li>Perfectionist tendencies</li>
-    </ul>
-    <h3>Personal Skills</h3>
-    <ul>
-      <li>Drawing</li>
+
+            </ul>
+          </div>
+          
+          <div>
+            <h3>Personal Skills</h3>
+            <ul>
+              <li>Drawing</li>
       <li>Outdoor sports</li>
       <li>Programming</li>
-    </ul>
-  </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p><strong>Phone:</strong> +91-8379922302</p>
-    <p><strong>Email:</strong> radhakhatri1474@gmail.com</p>
-    <p>
-      <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank">
-        <img src="linkedin.png" alt="LinkedIn" />
-      </a>
-      <a href="https://youtube.com/@radhascreativity?feature=shared" target="_blank">
-        <img src="youtube.png" alt="YouTube" />
-      </a>
-      <a href="https://github.com/RadhaKhatri" target="_blank">
-        <img src="git.png" alt="Github" />
-      </a>
-    </p>
-  </section>
+            </ul>
+          </div>
+          <div>
+            <h3>Weaknesses</h3>
+            <ul>
+              <li>Difficulty saying "no"</li>
+      <li>Perfectionist tendencies</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p><strong>Phone:</strong> +91-8379922302</p>
+        <p><strong>Email:</strong> <a href="mailto:radhakhatri1474@gmail.com">radhakhatri1474@gmail.com</a></p>
+
+        <p class="socials">
+          <a href="http://www.linkedin.com/in/radha-khatri-9550b0257" target="_blank" rel="noopener">
+            <img src="linkedin.png" alt="LinkedIn" />
+          </a>
+          <a href="https://youtube.com/@radhascreativity?feature=shared" target="_blank" rel="noopener">
+            <img src="youtube.png" alt="YouTube" />
+          </a>
+          <a href="https://github.com/RadhaKhatri" target="_blank" rel="noopener">
+            <img src="git.png" alt="Github" />
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Radha Khatri.</p>
+    <div class="container footer-inner">
+      <p>&copy; 2025 Radha Khatri.</p>
+    </div>
   </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
