@@ -141,19 +141,58 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Open modal and mark the clicked card as active (if provided)
+function openProject(id, cardEl = null) {
+  const modal = document.getElementById(id);
+  if (!modal) return;
+  modal.setAttribute("aria-hidden", "false");
 
-function openProject(id) {
-  document.getElementById(id).setAttribute("aria-hidden", "false");
+  // clear any previous active card
+  document.querySelectorAll('.project-card').forEach(c => c.classList.remove('active'));
+
+  // if a card element is provided, add active class to it
+  if (cardEl) cardEl.classList.add('active');
 }
+
+// Close modal and remove active highlight from cards
 function closeProject(id) {
-  document.getElementById(id).setAttribute("aria-hidden", "true");
+  const modal = document.getElementById(id);
+  if (!modal) return;
+  modal.setAttribute("aria-hidden", "true");
+
+  // remove active class from all project cards
+  document.querySelectorAll('.project-card').forEach(c => c.classList.remove('active'));
 }
 
-// Optional: close modal on background click
+// Close modal on background click (you already had this — kept it)
 document.querySelectorAll(".modal").forEach(modal => {
   modal.addEventListener("click", function(e) {
     if (e.target === modal) {
       modal.setAttribute("aria-hidden", "true");
+      // remove highlight when closed via background
+      document.querySelectorAll('.project-card').forEach(c => c.classList.remove('active'));
     }
   });
 });
+
+// Close currently-open modal on ESC key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' || e.key === 'Esc') {
+    document.querySelectorAll('.modal[aria-hidden="false"]').forEach(modal => {
+      modal.setAttribute('aria-hidden', 'true');
+    });
+    document.querySelectorAll('.project-card').forEach(c => c.classList.remove('active'));
+  }
+});
+
+// Fade-in animation when section appears on scroll
+  const swotCards = document.querySelectorAll('.swot-card');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  swotCards.forEach(card => observer.observe(card));

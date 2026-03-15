@@ -44,21 +44,36 @@
 
   <main>
     <section id="about" class="section about">
-      <div class="container">
-        <h2>About Me</h2>
+  <div class="container hero-container">
+    <!-- Left: Profile Photo -->
+    <div class="hero-image">
+      <img src="radha.jpg" alt="Radha Khatri">
+    </div>
+
+    <!-- Right: Text & Actions -->
+    <div class="hero-text">
+      <p class="greeting">Hello, I'm</p>
+      <h1>Radha Bhavarlal Khatri</h1>
+      <p class="subtitle">B.Tech (CSE) • Cloud & Web Developer • YouTuber & Educator</p>
+
+      <!-- Animated descriptor -->
+      <div class="descriptor" aria-live="polite">
+        <span class="descriptor-static">I am a</span>
+        <span id="typed-text" class="typed"></span>
+        <span class="cursor">|</span>
+      </div>
+
+      <!-- Buttons -->
+      <div class="hero-buttons">
+        <a href="KhatriResume.pdf" download class="btn download-resume">Download Resume</a>
+      </div>
+    </div>
+  </div>
         <p>Hello! I am Radha Bhavarlal Khatri from Kirloskarwadi, Sangli. I am pursuing a B.Tech in Computer Science Engineering at ADCET, Ashta, with a CGPA of 9.1. I completed SSC with 97% and HSC with 85% marks.</p>
     <p>Computer Science Engineering student with a solid foundation in web development, cloud computing, and programming. Maintains a strong academic record and has hands-on experience through projects and internships. Actively involved in developer communities and always willing to learn new technologies, solve real-world problems, and contribute to team success. Focused on building practical, innovative tech solutions while continuously improving skills.I am passionate about teaching, graphic design, and Cloud Computing. I also run a YouTube channel to simplify complex academic concepts for juniors and peers. My strengths include being hardworking and challenge-ready.I aim to become a skilled engineer and a contributing citizen. </p>
 
         <p class="lead">I build cloud and web solutions, teach concepts on my YouTube channel, and enjoy solving real-world problems.</p>
 
-        <!-- Animated descriptor -->
-        <div class="descriptor" aria-live="polite">
-          <span class="descriptor-static">I am a</span>
-          <span id="typed-text" class="typed"></span>
-          <span class="cursor">|</span>
-        </div>
-
-        <a class="resume-download" href="KhatriResume.pdf" download>Download Resume (PDF)</a>
       </div>
     </section>
 
@@ -186,39 +201,40 @@
       </div>
     </section>
 
-    <section id="swot" class="section swot">
+     <section id="swot" class="section swot">
       <div class="container">
         <h2>SWOT</h2>
-        <div class="grid">
-          <div>
-            <h3>Strengths</h3>
-            <ul>
-              <li>Hardworking</li>
-      <li>Decision-making</li>
-      <li>Problem-solving</li>
-      <li>Challenge-accepting</li>
+        <div class="swot-grid">
+      
+      <div class="swot-card strength">
+        <h3>Strengths</h3>
+        <ul>
+          <li>Hardworking</li>
+          <li>Decision-making</li>
+          <li>Problem-solving</li>
+          <li>Challenge-accepting</li>
+        </ul>
+      </div>
 
-            </ul>
-          </div>
-          
-          <div>
-            <h3>Personal Skills</h3>
-            <ul>
-              <li>Drawing</li>
-      <li>Outdoor sports</li>
-      <li>Programming</li>
+      <div class="swot-card ski">
+        <h3>Personal Skills</h3>
+        <ul>
+          <li>Drawing</li>
+          <li>Outdoor sports</li>
+          <li>Programming</li>
+        </ul>
+      </div>
 
-            </ul>
-          </div>
-          <div>
-            <h3>Weaknesses</h3>
-            <ul>
-              <li>Difficulty saying "no"</li>
-      <li>Perfectionist tendencies</li>
+      <div class="swot-card weakness">
+        <h3>Weaknesses</h3>
+        <ul>
+          <li>Difficulty saying “no”</li>
+          <li>Perfectionist tendencies</li>
+        </ul>
+      </div>
 
-            </ul>
-          </div>
-        </div>
+    </div>
+
       </div>
     </section>
 
