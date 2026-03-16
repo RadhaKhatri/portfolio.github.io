@@ -1,78 +1,47 @@
-# Radha Khatri Portfolio
+# Professional Portfolio Website
 
-Welcome to my personal portfolio website! This website showcases my skills, education, projects, achievements, and contact information in a modern, interactive format.
+This repository contains the personal portfolio of Radha Bhavarlal Khatri, redesigned with an industry-style structure, cleaner information architecture, and production-ready front-end interactions.
 
----
+## What Changed
 
-## 🌐 Live Demo
+- Rebuilt the page into a professional single-page portfolio flow:
+  - Brand header with sticky navigation
+  - Strategic hero with key metrics and clear CTA
+  - Professional summary and strengths
+  - Experience and leadership timeline
+  - Featured project cards with modal detail view
+  - Skills, certifications, achievements, education, and contact sections
+- Introduced a complete design system with reusable variables and responsive layout patterns.
+- Added meaningful motion and reveal effects with reduced-motion support.
+- Upgraded JavaScript interactions for better UX:
+  - Theme persistence
+  - Mobile navigation
+  - Smooth scroll + active section highlighting
+  - Typed focus line animation
+  - Accessible dialog-based project detail popups
 
-You can view my portfolio online:  
-https://radhakhatri.github.io/portfolio.github.io/
+## Tech Stack
 
----
+- HTML5
+- CSS3 (custom properties, responsive grid/flex, transitions)
+- Vanilla JavaScript (modular functions and progressive enhancement)
 
-## 🛠️ Features
+## Project Structure
 
-- **Responsive Design:** Works perfectly on desktop, tablet, and mobile.
-- **Dark / Light Theme Switcher:** Toggle between light and dark modes.
-- **Animated Text:** Describes my professional profile with smooth transitions.
-- **Navigation:** Smooth scrolling navigation to sections: About, Education, Skills, Projects, Achievements, SWOT, and Contact.
-- **Projects Section:**  
-  - Interactive project cards  
-  - Clickable cards show project details and technologies in a modal popup
-- **Resume Download:** Direct PDF download link.
-- **Social Links:** LinkedIn, GitHub, YouTube, and Email.
+- index.html -> Semantic page structure and content sections
+- styles.css -> Design system, layout, responsiveness, and animation
+- script.js -> UI interactions and behavior
+- README.md -> Documentation
 
----
+## Run Locally
 
-## 📂 Folder Structure
+1. Open the folder in VS Code.
+2. Launch index.html in a browser.
+3. For best workflow, use the Live Server extension.
 
-portfolio.github.io/
+## Next Content Improvements (Optional)
 
-│
-
-├─ index.html # Main HTML file
-
-├─ styles.css # Custom CSS for layout, theme, and animations
-
-├─ script.js # JS for theme toggle, modals, and typed text
-
-├─ images/ # Images and icons used in portfolio
-
-├─ RADHA_CSE.pdf # Resume PDF
-
-└─ README.md # This file
-
-
----
-
-## 💻 Technologies Used
-
-- HTML5 & CSS3  
-- JavaScript (Vanilla JS)  
-- Google Fonts (Roboto)  
-- PyQt6 (in projects)  
-- Python, MySQL, Excel VBA (for projects)
-
----
-
-## 🚀 How to Run Locally
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/RadhaKhatri/portfolio.github.io
-
-cd portfolio.github.io
-
-Open index.html in your preferred browser.
-
-Email: radhakhatri1474@gmail.com
-
-Phone: +91-8379922302
-
-LinkedIn: http://www.linkedin.com/in/radha-khatri-9550b0257   
-
-GitHub: https://github.com/RadhaKhatri                     
-
-YouTube: https://www.youtube.com/@radhascreativity      
+- Add final production-quality project screenshots.
+- Add measurable outcomes for each project (time saved, users impacted, accuracy metrics).
+- Add downloadable resume and profile image optimizations.
+- Add Open Graph tags for better LinkedIn sharing preview.
